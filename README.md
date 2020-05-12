@@ -1,2 +1,5 @@
-# go-handbook
-go handbook with examples for newbie or advanced
+# Go Handbook
+
+Handbook with examples for the newbie or advanced.
+
+## [Contents](catalog.md)
