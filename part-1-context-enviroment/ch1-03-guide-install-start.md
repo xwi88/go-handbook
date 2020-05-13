@@ -73,6 +73,23 @@ func main() {
 }
 ```
 
+## Dirs for Go SDK
+
+```text
+┌── api/    go 不同版本 api 说明
+├── bin/    包含可执行文件，如：编译器，Go 工具:gofmt, etc.
+├── doc/    包含示例程序，代码工具，本地文档等
+├── favicon.ico
+├── go1.14.2.darwin-amd64.tar.gz
+├── lib/    lib 文件，当前有 time 时区文件
+├── misc/   包含与支持 Go 编辑器有关的配置文件以及 cgo 的示例
+├── pkg/    依赖库支持及工具
+├── robots.txt
+├── src/    **包含源代码构建脚本和标准库的包的完整源代码**
+    |__ cmd/    **包含 Go 和 C 的编译器和命令行脚本**
+└── test/   go自测试相关文件
+```
+
 ## Glossary
 
 - **GOROOT**: go 安装位置, 安装后生成或配置
