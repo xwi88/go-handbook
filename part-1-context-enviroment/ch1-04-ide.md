@@ -27,7 +27,7 @@ _可以通过 Download SDK 方式下载配置特定版本的 **Go SDK**_。
 图 1-6 Go Code Style imports 配置
 
 ![](../images/ch1-04-goland-other.png)
-图 1-6 Go Code Style other 配置
+图 1-7 Go Code Style other 配置
 
 ### Plugins
 
