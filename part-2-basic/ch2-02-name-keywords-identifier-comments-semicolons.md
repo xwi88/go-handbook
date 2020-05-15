@@ -35,7 +35,7 @@ continue     for          import       return       var
 
 ## 2.2.3 标识符
 
-### Go 官方定义的字母与下划线
+### Go 官方规定的字母与下划线
 
 >character _ (U+005F) 也看作是字母
 
@@ -77,13 +77,29 @@ Go注释: 文件、包、常量、变量、结构类型(结构体与接口)、�
 - 包注释: 包上一行或多行，以Package 开头，后跟包名，如: **Package http ...**，简要描述此包功能用途等
 - 函数、常量、变量、及结构体的注释，均以其名称开头，后面紧跟说明
 - 常量组或者变量组, 可在组紧挨着的上一行，以大写开头添加说明即可，如果要在组内添加说明则必须按照实际名称开头，后紧跟相关描述
+- 参考注释: 
+    - `compress/zlib/reader.go`
+    - `compress/zlib/reader.go`
+    - `context/context.go`
+    - `database/sql/sql.go`
+    - `fmt/doc.go`
+    - `go/token/token.go`
+    - `go/types/type.go`
+    - `io/io.go`
+    - `net/http/method.go`
+    - `net/mockserver_test.go`
+    - `sort/sort.go`
 
 ### 其他注释
+
+>一般: 单独一行或多行, 同时和其它代码或者注释之间通过空行隔开
 
 - **[条件编译注释](https://tip.golang.org/pkg/go/build/#hdr-Build_Constraints)**
     - 单独一行或多行，均以// +build 开头，同时和其它代码或者注释之间通过空行隔开
     - 多行之间为 _AND_
     - `// +build linux,386 darwin,!cgo` 条件编译组合结果是：`(linux AND 386) OR (darwin AND (NOT cgo))`
+    - `os/stat_unix.go` `// +build aix darwin dragonfly freebsd js,wasm linux netbsd openbsd solaris`
+    - [json wrap for standard json & easy-json](https://github.com/xwi88/kit4go/blob/master/json/jsoniter.go)
 - [二进制包](https://tip.golang.org/pkg/go/build/#hdr-Binary_Only_Packages)
     - `//go:binary-only-package` 代表代码中直接引用二进制包。二进制包的位于：`$GOPATH/pkg/` 路徑下
     - [go-binary-only-package](https://github.com/tcnksm/go-binary-only-package)
@@ -92,7 +108,18 @@ Go注释: 文件、包、常量、变量、结构类型(结构体与接口)、�
     - 多条命令多行
     - 依赖 `go-tool generate`, `go generate`
 - cgo 注释
+    - `net/cgo_linux.go`
+    - `net/cgo_unix.go`
 - 代码工具生成注释, 如：proto 工具生成的文件，会添加禁止编辑修改等注释!
+    - `net/http/http.go` 
+        - `//go:generate bundle -o=h2_bundle.go -prefix=http2 -tags=!nethttpomithttp2 golang.org/x/net/http2`
+    - `sort/sort.go`
+        - `//go:generate go run genzfunc.go`
+- 其他
+    - `//go:noinline`
+    - `//go:nosplit`
+    - `//go:noescape`
+    - `//go:norace`
 
 #### 示例
 

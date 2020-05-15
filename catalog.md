@@ -7,4 +7,4 @@
     - ch1-04 [Go IDE 使用及配置](part-1-context-enviroment/ch1-04-ide.md)
 - **Part 2** basic
     - ch2-01 [Hello World](part-2-basic/ch2-01-helloworld-run.md)
-    - ch2-02 [命名、关键字、标识符与分号](part-2-basic/ch2-02-name-keywords-identifier-semicolons.md)
+    - ch2-02 [命名、关键字、标识符、注释与分号](part-2-basic/ch2-02-name-keywords-identifier-comments-semicolons.md)
