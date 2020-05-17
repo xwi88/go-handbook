@@ -8,7 +8,7 @@
 - [VS Code](https://code.visualstudio.com/) ☆☆
 - [GoLand](https://www.jetbrains.com/go/) ☆☆☆☆☆
 
-## Goland 建议配置
+## GoLand 建议配置
 
 >包导入顺序说明: 标准库包, 本地包(不建议)，golang包，初始化包，github
 

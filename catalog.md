@@ -9,3 +9,4 @@
   - ch2-01 [Hello World](part-2-basic/ch2-01-helloworld-run.md)
   - ch2-02 [命名、关键字、标识符、注释与分号](part-2-basic/ch2-02-name-keywords-identifier-comments-semicolons.md)
   - ch2-03 [字面量、操作符与标点字符](part-2-basic/ch2-03-literals-operators-punctuation.md)
+  - ch2-04 [Go 程序的基本组成与可见性](part-2-basic/ch2-04-basic-elements-visibility.md)
