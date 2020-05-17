@@ -4,9 +4,9 @@ Go语言最初由Google公司的**Robert Griesemer**、**Ken Thompson**和**Rob 
 
 Go是基于编译、垃圾收集和并发的编程语言。
 
-![](../images/ch1-01-go-3-bigman.png)
+![Go 创始人](../images/ch1-01-go-3-bigman.png)
 
-*图 1-1 Go 创始人*
+图 1-1 Go 创始人
 
 **Rob Pike**：曾是贝尔实验室Unix开发团队成员，Plan9操作系统开发的主要领导人，Inferno操作系统开发的主要领导人。
 
@@ -14,9 +14,9 @@ Go是基于编译、垃圾收集和并发的编程语言。
 
 **Robert Griesemer**：曾为谷歌的V8 JavaScript引擎和Chubby开发代码。
 
-![](../images/ch1-01-go-family-tree.png)
+![Go语言基因族谱](../images/ch1-01-go-family-tree.png)
 
-*图 1-2 Go语言基因族谱*
+图 1-2 Go语言基因族谱
 
 首先看基因图谱的左边一支。可以明确看出Go语言的并发特性是由贝尔实验室的Hoare于1978年发布的CSP理论演化而来。其后，CSP并发模型在Squeak/NewSqueak和Alef等编程语言中逐步完善并走向实际应用，最终这些设计经验被消化并吸收到了Go语言中。业界比较熟悉的Erlang编程语言的并发编程模型也是CSP理论的另一种实现。
 
@@ -30,38 +30,38 @@ Go语言其它的一些特性零散地来自于其他一些编程语言；比如
 
 - _Go 1.15 2020/08/?_
 - Go 1.14 2020/02/25
-    - Go module 可用于生生产
-    - defer 优化
-    - goroutine 支持异步抢占
+  - Go module 可用于生生产
+  - defer 优化
+  - goroutine 支持异步抢占
 - Go 1.13 2019/09/03
-    - sync.Pool improve
-    - 重写逃逸分析
+  - sync.Pool improve
+  - 重写逃逸分析
 - Go 1.12 2019/02/25
-    - 重写了 go vet。
+  - 重写了 go vet。
 - Go 1.11 2018/08/24
-    - **[Go modules](https://blog.golang.org/using-go-modules)**
-    - [WebAssembly](https://webassembly.org)
+  - **[Go modules](https://blog.golang.org/using-go-modules)**
+  - [WebAssembly](https://webassembly.org)
 - Go 1.10 2018/02/16
-    - build cache
+  - build cache
 - Go 1.9 2017/08/24
-    - 别名支持
-    - sync Map
+  - 别名支持
+  - sync Map
 - Go 1.8 2017/02/16
-    - gc STW 优化
-    - defer 优化
+  - gc STW 优化
+  - defer 优化
 - Go 1.7 2016/08/15
-    - 这个版本发布了 context 包 ，为用户提供了处理超时和任务取消的方法。
+  - 这个版本发布了 context 包 ，为用户提供了处理超时和任务取消的方法。
 - Go 1.6 2016/02/17
-    - 使用 HTTPS 时默认支持 HTTP/2。
+  - 使用 HTTPS 时默认支持 HTTP/2。
 - Go 1.5 2015/08/19
-    - 对 gc 进行了重新设计。
-    - 开始自举，go自编译。
+  - 对 gc 进行了重新设计。
+  - 开始自举，go自编译。
 - Go 1.4 2014/12/10
 - Go 1.3 2014/06/18
 - Go 1.2 2013/12/01
 - Go 1.1 2013/05/13
 - Go 1.0 2012/03/28
-    - Go 的第一个版本。
+  - Go 的第一个版本。
 - 2011/05/05：Google App Engine 支持 Go 语言
 - 2010/05：谷歌投入使用
 - 2010/01/08：当选 2009 年年度语言

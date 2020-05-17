@@ -1,6 +1,6 @@
-# 1.2 Why Go?
+# 1.2 Why Go
 
-## 为什么要创建 Go?
+## 为什么要创建 Go
 
 - C/C++ 的发展速度无法跟上计算机发展的脚步，十多年来也没有出现一门与时代相符的主流系统编程语言，因此人们需要一门新的系统编程语言来弥补这个空缺，尤其是在计算机信息时代。
 - 对比计算机性能的提升，软件开发领域不被认为发展地足够快或者比硬件发展更加成功（有许多的项目均以失败告终），同时应用程序的体积始终在不断地扩大，这就迫切地需要一门具备更高层次概念的低级语言来突破现状。
@@ -39,12 +39,12 @@
 - 支持交叉编译，并采用编译的编码：UTF-8
 - 基于BSD完全开源，所以能免费的被任何人用于适合商业目的。
 - 语言层面对并发的支持（goroutine：独立于OS的线程，所以多个goroutine可以运行在一个OS的线程里，也可以分布到多个OS线程里。goroutine是从OS线程上抽象出来的一个轻量级的基于CSP的协程。）
-    - 在语言层面加入对并发的支持，而不是以库的形式提供
-    - 更高层次的并发抽象，而不是直接暴露OS的并发机制
-    - 多个goroutine间是并行的
-    - 底层混合使用非阻塞IO和线程
+  - 在语言层面加入对并发的支持，而不是以库的形式提供
+  - 更高层次的并发抽象，而不是直接暴露OS的并发机制
+  - 多个goroutine间是并行的
+  - 底层混合使用非阻塞IO和线程
 
-![](../images/ch1-02-go-inspired-by.jpg)
+![其它编程语言对 Go 语言的影响](../images/ch1-02-go-inspired-by.jpg)
 
 图 1-3 其它编程语言对 Go 语言的影响
 
@@ -52,36 +52,36 @@
 
 - 不支持函数和操作符的重载
 - 不支持隐式类型转换，避免产生Bug和迷惑
-- 不支持类和继承，可通过 struct 与组合实现
+- 不支持类和继承，可通过 `struct` 与组合实现
 - 不支持动态代码加载
 - 不支持动态链接库
 - 不支持泛型(有望在2.0添加此特性)
 
 ## Go 优秀应用
 
-- 云计算基础设施领域: 
-    - [Docker](https://github.com/docker/docker-ce)
-    - [K8S](https://github.com/kubernetes/kubernetes)
-    - [Etcd](https://github.com/etcd-io/etcd) 
-    - [Consul](https://github.com/hashicorp/consul)
-    - Cloudflare CDN
-    - [Moby](https://github.com/moby/moby)
-- 基础软件: 
-    - [nsq](https://github.com/nsqio/nsq)
-    - [TiDB](https://github.com/pingcap/tidb)
-    - [InfluxDB](https://github.com/influxdata/influxdb)
-    - [Prometheus](https://github.com/prometheus/prometheus)
-    - [Grafana](https://github.com/grafana/grafana)
-    - [CockRoachDB](https://github.com/cockroachdb/cockroach)
-    - [frp](https://github.com/fatedier/frp)
-    - [syncthing](https://github.com/syncthing/syncthing)
-    - [traefik](https://github.com/containous/traefik)
-    - [goreplay](https://github.com/buger/goreplay)
-    - [cayley](https://github.com/cayleygraph/cayley)
-    - [dgraph](https://github.com/dgraph-io/dgraph)
-    - [bolt](https://github.com/boltdb/bolt)
-- 互联网基础设施: 
-    - [Ethereum](https://github.com/ethereum/go-ethereum)
+- 云计算基础设施领域:
+  - [Docker](https://github.com/docker/docker-ce)
+  - [K8S](https://github.com/kubernetes/kubernetes)
+  - [Etcd](https://github.com/etcd-io/etcd)
+  - [Consul](https://github.com/hashicorp/consul)
+  - Cloudflare CDN
+  - [Moby](https://github.com/moby/moby)
+- 基础软件:
+  - [nsq](https://github.com/nsqio/nsq)
+  - [TiDB](https://github.com/pingcap/tidb)
+  - [InfluxDB](https://github.com/influxdata/influxdb)
+  - [Prometheus](https://github.com/prometheus/prometheus)
+  - [Grafana](https://github.com/grafana/grafana)
+  - [CockRoachDB](https://github.com/cockroachdb/cockroach)
+  - [frp](https://github.com/fatedier/frp)
+  - [syncthing](https://github.com/syncthing/syncthing)
+  - [traefik](https://github.com/containous/traefik)
+  - [goreplay](https://github.com/buger/goreplay)
+  - [cayley](https://github.com/cayleygraph/cayley)
+  - [dgraph](https://github.com/dgraph-io/dgraph)
+  - [bolt](https://github.com/boltdb/bolt)
+- 互联网基础设施:
+  - [Ethereum](https://github.com/ethereum/go-ethereum)
 
 ## 使用 Go 的公司
 
