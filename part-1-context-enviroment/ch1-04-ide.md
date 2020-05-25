@@ -22,12 +22,16 @@ _可以通过 Download SDK 方式下载配置特定版本的 **Go SDK**_。
 
 - SDK 请选择与 GOROOT 一致的配置
 - `GOPROXY=https://goproxy.cn,https://goproxy.io,https://proxy.golang.org,direct`
+- `GOPROXY=https://mirrors.aliyun.com/goproxy,https://goproxy.cn,https://goproxy.io,https://gocenter.io,https://proxy.golang.org,direct`
 
 ![Go Code Style imports 配置](../images/ch1-04-goland-code-style-imports.png)
 图 1-6 Go Code Style imports 配置
 
 ![Go Code Style other 配置](../images/ch1-04-goland-other.png)
 图 1-7 Go Code Style other 配置
+
+![Go File Watch 配置](../images/ch1-04-goland-file-watch.png)
+图 1-8 Go File Watch 配置
 
 ### Plugins
 
@@ -38,3 +42,4 @@ _可以通过 Download SDK 方式下载配置特定版本的 **Go SDK**_。
 - Makefile Support
 - .env files support
 - Rainbow Brackets
+- GitToolbox

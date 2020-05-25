@@ -54,7 +54,8 @@ export GOBINARY=$HOME/go/bin
 export PATH=$PATH:$GOBINARY
 
 # go proxy config
-export GOPROXY=https://goproxy.cn,https://goproxy.io,https://proxy.golang.org,direct
+# export GOPROXY=https://goproxy.cn,https://goproxy.io,https://proxy.golang.org,direct
+GOPROXY=https://mirrors.aliyun.com/goproxy,https://goproxy.cn,https://goproxy.io,https://gocenter.io,https://proxy.golang.org,direct
 ```
 
 ## Hello World

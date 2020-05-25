@@ -63,6 +63,25 @@ ThisVariableIsExported
 αβ
 ```
 
+### 预定义标识符
+
+内建常量:
+
+- true, false, iota, nil
+
+内建类型:
+
+- int, int8, int16, int32, int64,
+- uint, uint8, uint16, uint32, uint64,
+- uintptr, float32, float64, complex64, complex128,
+- bool, byte, `rune`, string, `error`
+
+内建函数:
+
+- append, cap, close, complex, copy,
+- `delete`, imag, len, make, new,
+- panic, print, println, real, recover
+
 ## 2.2.4 注释
 
 Go注释: 文件、包、常量、变量、结构类型(结构体与接口)、方法/函数、其他注释。Go注释格式与C类似，支持单行与多行。
